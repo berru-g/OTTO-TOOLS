@@ -20,6 +20,7 @@ indexFile.WriteLine("  <title>My New Project</title>")
 indexFile.WriteLine("</head>")
 indexFile.WriteLine("<body>")
 indexFile.WriteLine("  <h1>Hello, world!</h1>")
+indexFile.WriteLine("  <p>sub-title</p>")
 indexFile.WriteLine("</body>")
 indexFile.WriteLine("</html>")
 indexFile.Close
