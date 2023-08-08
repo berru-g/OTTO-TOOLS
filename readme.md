@@ -1,4 +1,4 @@
-frontend-file-otto.vbs create this process:
+Create-front-folders.vbs create this process:
 
 ```mermaid
 graph LR
@@ -10,3 +10,5 @@ C{index.html} --> F[vscode]
 D{style.CSS} --> F[vscode]
 E{script.js} --> F[vscode]
 ```
+
+    coordonateCMD.py affiche les valeurs X et Y en temps réel / Interface
