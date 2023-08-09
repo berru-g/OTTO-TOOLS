@@ -1,3 +1,4 @@
+' Automatisation de la creation dun dossier front avec fichier, HTML, CSS, JS et readme.md
 Dim fso, folder, indexFile, styleFile, scriptFile, shell, folderPath
 
 ' Créer une instance de FileSystemObject

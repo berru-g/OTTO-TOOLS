@@ -1,4 +1,6 @@
-#interface pour afficher les coordonnées X et Y de la souris en temps réel et les copier
+#interface pour afficher les coordonnées X et Y 
+# de la souris en temps réel et les copier.
+#Aide a l automatisation
 import tkinter as tk
 import pyautogui
 from pynput import mouse
