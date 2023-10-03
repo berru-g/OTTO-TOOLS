@@ -53,6 +53,10 @@ Set scriptFile = fso.CreateTextFile(fso.BuildPath(folderPath, "readme.md"), True
 scriptFile.WriteLine("# title")
 scriptFile.WriteLine("## subtitle")
 scriptFile.Close
+
+' Ouvrir le dossier du nouveau projet dans VSCode
+Set shell = CreateObject("WScript.Shell")
+shell.Run "code " & folderPath
 ' Ouvrir le dossier du nouveau projet dans l'explorateur de fichiers
 Set shell = CreateObject("Shell.Application")
 shell.Open folderPath
