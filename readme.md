@@ -1,6 +1,8 @@
 Create-front-folders.vbs create this process:
 #### Crée un ficher front dans Documents, contenant; html, css, js et md puis l'ouvre dans vscode
 
+    This script allows you to create a folder in your 'documents', including an html, css, js and readme file, then open it in Vscode, with just a double click.
+
 ```mermaid
 graph LR
 A[Documents] -- create --> B((new-project))
