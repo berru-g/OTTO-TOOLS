@@ -20,7 +20,10 @@ Sub GetWifiPassword
         result = ExecuteCommand(command)
 
         ' Afficher le résultat dans une fenêtre de message
-        MsgBox "Mot de passe WiFi pour " & boxName & " :" & vbCrLf & vbCrLf & result
+        MsgBox "Mot de passe WiFi pour " & boxName & " :"  & result
+                ' Afficher les informations dans une fenêtre de message avec une taille plus grande
+       ' Set objShell = CreateObject("WScript.Shell")
+       ' objShell.Popup result, 0, "Informations WiFi pour " & boxName, 64 + 4096, 0
     Else
         ' Si l'utilisateur n'a pas entré de nom de box, afficher un message d'erreur
         MsgBox "Veuillez entrer un nom de box WiFi valide."

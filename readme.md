@@ -16,3 +16,5 @@ E{script.js} --> F[vscode]
 
     coordonateCMD.py affiche les valeurs X et Y en temps réel / Interface
     coordonateInterface.py permet en plus de copier les coordonées d'un click puis de les afficher
+
+##### Tool otto for crypto in [this repository](https://github.com/berru-g/api-crypto-tool-s)
