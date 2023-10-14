@@ -1,0 +1,8 @@
+<a href="javascript:runScript()">Aide wifi</a>
+
+<script>
+    function runScript() {
+        var wsh = new ActiveXObject("WScript.Shell");
+        wsh.Run("wifi\HelpWifi.vbs", 1, false);
+    }
+</script>
