@@ -1,3 +1,4 @@
+' Flemme corporation, tout ce qui nous fait gagner deux minutes est bon à prendre.
 ' Automatisation de la creation dun dossier front avec fichier, HTML, CSS, JS et readme.md
 Dim fso, folder, indexFile, styleFile, scriptFile, shell, folderPath
 
