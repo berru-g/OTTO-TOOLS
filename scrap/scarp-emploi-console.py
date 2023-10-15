@@ -17,8 +17,8 @@ location = input("")
 # URL templates for each site
 #poleemploi_url = "https://candidat.pole-emploi.fr/offres/recherche?lieux={}&motsCles={}&offresPartenaires=true&rayon=10&tri=0"
 poleemploi_url = "https://candidat.pole-emploi.fr/offres/recherche?&motsCles={}&lieux{}&offresPartenaires=true&rayon=10&tri=0"
-jeudisdotcom_url = "https://www.lesjeudis.com/recherche?keywords={}&location={}"
-indeed_url = "https://fr.indeed.com/emplois?q={}&l={}"
+"""jeudisdotcom_url = "https://www.lesjeudis.com/recherche?keywords={}&location={}"
+indeed_url = "https://fr.indeed.com/emplois?q={}&l={}""""
 
 # Search Pole Emploi
 poleemploi_search = requests.get(poleemploi_url.format(job, location))
@@ -63,7 +63,7 @@ for title in indeed_titles:
 sleep(1)
 
 print("Fin des résultats")
-"""
+
 
 print("Voulez-vous ouvrir une page web ?")
 
@@ -81,4 +81,5 @@ else:
     print("Je ne comprends pas votre réponse.")
     print("Aidez nous à améliorer cet outil, rdv sur github.com/berru-g")
 sleep(100)
+"""
 exit()

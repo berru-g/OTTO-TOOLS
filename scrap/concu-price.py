@@ -10,13 +10,13 @@ print("--- CONCU SEARCH PRICE ---")
 print("Entrez le titre du poste:")
 job = input("")
 
-concurence_url = "https://candidat.pole-emploi.fr/offres/recherche?&motsCles={}&lieux{}&offresPartenaires=true&rayon=10&tri=0"
+concurence_url = "https://www.metro.fr/marketplace/search?q={}"
 
 concurence_search = requests.get(concurence_url.format(job))
 concurence_soup = BeautifulSoup(concurence_search.text, "html.parser")
-concurence_titles = concurence_soup.find_all(class_="media-heading-title")
-subtitles = concurence_soup.find_all(class_="subtext")
-prices = concurence_soup.find_all(class_="price")
+concurence_titles = concurence_soup.find_all(class_="product-card__title")
+subtitles = concurence_soup.find_all(class_="product-card__price-amount__main-price product-card__price-amount__price-color product-card__price-amount__main-price-promotion")
+prices = concurence_soup.find_all(class_="product-card__price-tax ng-star-inserted")
 
 print("Résultats de la recherche :")
 
