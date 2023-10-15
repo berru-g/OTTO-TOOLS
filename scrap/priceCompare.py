@@ -31,8 +31,8 @@ for title in first_titles:
     for subtitle in subtitles:
         for price in prices:
             print(title.text)
-            print(subtitle.text)
-            print(price.text)
+            print(subtitle.text) 
+            print(price.text) 
             print("__________")
 time.sleep(2)
 
