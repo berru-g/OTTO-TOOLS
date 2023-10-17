@@ -2,11 +2,10 @@
       github/berru-g 23
       Outil pour comparer les prix de vente de ses concurents
 """
-#next step: interface web
 import time
 import requests
 from bs4 import BeautifulSoup
-
+print("")
 print("Entrez le produit recherché:")
 product = input("")
 
