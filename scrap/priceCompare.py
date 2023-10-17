@@ -25,7 +25,7 @@ prices = first_soup.find_all(class_="js-main-price")
 print("price")
 
 print("Résultats de la recherche du concurent 1:")
-
+ 
 # Print the titles
 for title in first_titles:
     for subtitle in subtitles:
@@ -35,7 +35,7 @@ for title in first_titles:
             print(price.text) 
             print("__________")
 time.sleep(2)
-
+ 
 print("Fin des résultats")
 print("Si aucun resultat n'est trouvé alors changer le nom des class dans le script")
 print("_______________")
