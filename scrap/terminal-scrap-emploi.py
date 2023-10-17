@@ -1,26 +1,29 @@
 """    Learn python 
       github/berru-g 23
 """
-#next step: use title, subtitle & date - ex: poleemploi.py
+
 from pyautogui import sleep
 import requests
 from bs4 import BeautifulSoup
 import webbrowser
 
-print("--  ___________  --")
-print("-- | POLAMPLOA | --")
-print("-- |_____*_____| --")
-print("--  ___________  --")
-print("Entrez le titre du poste:")
+print("╭─────────────────────╮")
+print("│      POLAMPLOA      │")
+print("╰─────────────────────╯")
+print("╭─────────────────────────────╮")
+print("| Entrez le titre du poste:   |")
+print("╰─────────────────────────────╯")
 job = input("")
-print("Entrez l emplacement:")
+print("╭─────────────────────────────╮")
+print("| Entrez l emplacement:       |")
+print("╰─────────────────────────────╯")
 location = input("")
+print(" ────────────────────────────")
 
-# URL templates for each site
-#poleemploi_url = "https://candidat.pole-emploi.fr/offres/recherche?lieux={}&motsCles={}&offresPartenaires=true&rayon=10&tri=0"
+#poleemploi_url = "https://candidat.pole-emploi.fr/offres/recherche?lieux={}&motsCles={}&offresPartenaires=true&range=0-19&rayon=10&tri=0"
 poleemploi_url = "https://candidat.pole-emploi.fr/offres/recherche?&motsCles={}&lieux{}&offresPartenaires=true&rayon=10&tri=0"
-jeudisdotcom_url = "https://www.lesjeudis.com/recherche?keywords={}&location={}"
-indeed_url = "https://fr.indeed.com/emplois?q={}&l={}"
+"""jeudisdotcom_url = "https://www.lesjeudis.com/recherche?keywords={}&location={}"
+indeed_url = "https://fr.indeed.com/emplois?q={}&l={}"""
 
 # Search Pole Emploi
 poleemploi_search = requests.get(poleemploi_url.format(job, location))
