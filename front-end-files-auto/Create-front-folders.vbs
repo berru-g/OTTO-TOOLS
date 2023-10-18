@@ -16,6 +16,7 @@ End If
 ' Créer les fichiers index.html, style.css et script.js dans le dossier
 Set indexFile = fso.CreateTextFile(fso.BuildPath(folderPath, "index.html"), True)
 indexFile.WriteLine("<!DOCTYPE html>")
+indexFile.WriteLine("<!--otto by berru-g/github.com-->")
 indexFile.WriteLine("<html>")
 indexFile.WriteLine("<head>")
 indexFile.WriteLine("  <title>My New Project</title>")

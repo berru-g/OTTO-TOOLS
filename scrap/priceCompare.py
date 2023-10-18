@@ -5,6 +5,19 @@
 import time
 import requests
 from bs4 import BeautifulSoup
+from colorama import init, Fore, Back, Style
+
+init(autoreset=True)
+large_text = '''
+    ____  _ _   _     
+   / ___|| | | | |    
+  | |   | | | | |    
+  | |___| | | |_|    
+   \____|_|_|\___|    
+'''
+
+print(Fore.GREEN + Back.WHITE + Style.BRIGHT + large_text)
+
 print("")
 print("Entrez le produit recherché:")
 product = input("")
