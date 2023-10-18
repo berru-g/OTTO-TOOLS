@@ -6,10 +6,11 @@ from pyautogui import sleep
 import requests
 from bs4 import BeautifulSoup
 import webbrowser
+from pyfiglet import Figlet
 
-print("╭─────────────────────╮")
-print("│      POLAMPLOA      │")
-print("╰─────────────────────╯")
+f = Figlet(font='slant')
+print (f.renderText('PolAmploa'))
+
 print("╭─────────────────────────────╮")
 print("| Entrez le titre du poste:   |")
 print("╰─────────────────────────────╯")
