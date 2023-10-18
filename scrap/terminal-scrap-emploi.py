@@ -7,10 +7,10 @@ import requests
 from bs4 import BeautifulSoup
 import webbrowser
 from pyfiglet import Figlet
-
-f = Figlet(font='slant')
+# font: slant, isometric1 et 2
+f = Figlet(font='isometric1')
 print (f.renderText('PolAmploa'))
-
+ 
 print("╭─────────────────────────────╮")
 print("| Entrez le titre du poste:   |")
 print("╰─────────────────────────────╯")

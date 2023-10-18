@@ -1,10 +1,13 @@
+from pyfiglet import Figlet
+# font: slant, isometric1 et 2
+f = Figlet(font='isometric1')
+print (f.renderText('task'))
+
 tasks = []
 
 while True:
-    print("Options :")
-    print("Tapez 'add' pour ajouter une tâche")
-    print("Tapez 'list' pour afficher la liste de tâches")
-    print("Tapez 'quit' pour quitter le programme")
+    print("add - list or quit")
+   
     user_input = input(": ")
 
     if user_input == "quit":
