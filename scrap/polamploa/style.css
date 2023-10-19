@@ -3,7 +3,7 @@ body {
       margin: 0;
       font-family: 'Incosolata', sans-serif;
       background-color: #f8f8f8;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="36" height="72" viewBox="0 0 36 72"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     .header {
@@ -77,9 +77,40 @@ p {
     .about p {
       color: #555;
     }
+    /* Styles pour les labels */
+label {
+    display: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles pour les champs de texte */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour le bouton */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style pour les sauts de ligne (br) */
+br {
+    margin: 10px 0;
+}
 
     .cta-button {
-      display: inline-block;
+      display: block;
       background-color: #007bff;
       color: white;
       padding: 10px 20px;
@@ -91,3 +122,13 @@ p {
     .cta-button:hover {
       background-color: #0056b3;
     }
+footer {
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+a {
+  color: grey;
+  text-decoration: none;
+}
+a:hover{color:#007bff;}

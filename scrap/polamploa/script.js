@@ -4,7 +4,7 @@ document.getElementById('searchButton').addEventListener('click', function () {
     var resultsDiv = document.getElementById('results');
 
     // URL du site à scraper
-    var siteUrl = "https://candidat.pole-emploi.fr/offres/recherche?&motsCles=" + jobTitle + "&lieux=" + location;
+    var siteUrl = "https://candidat.pole-emploi.fr/offres/recherche?&motsCles=" + jobTitle + "&lieux=" ;
 
     // Effectuer une requête AJAX pour obtenir le contenu de la page web
     var xhr = new XMLHttpRequest();
