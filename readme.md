@@ -18,8 +18,9 @@ E{script.js} --> F[vscode]
 
     'scrap' Recherche rapide via scrapping
     terminal-scrap-emploi.py
+    
+<img width="960" alt="polamploa3" src="https://github.com/berru-g/OTTO-TOOLS/assets/61543927/c873275d-386b-4c48-b542-7ba7ca1ffdd1">
 
-<img width="520" alt="polamploa" src="https://github.com/berru-g/OTTO-TOOLS/assets/61543927/971146e3-e9a0-45e8-9149-42d7dd928bfb">
 
     'preset.vbs' Ouvre un environnement de travail en un click
 
