@@ -7,7 +7,7 @@ from colorama import Fore, Style
 def poleemploi_search_job():
     f = Figlet(font='slant')
     print(f.renderText('Scrap'))
-    print("*            Polamploa            *")
+    print("*          Polamploa          *")
     while True:
         print("╭─────────────────────────────╮")
         print("| Entrez le titre du poste:   |")
