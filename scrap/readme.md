@@ -2,5 +2,7 @@
 
 <img width="960" alt="polamploa2" src="https://github.com/berru-g/OTTO-TOOLS/assets/61543927/ee73cff4-dca1-4bba-963b-9752cdda5c5c">
 
+#### version front
+[visite in codepen](https://codepen.io/h-lautre/pen/ExGqMdq?editors=1000)
 
 ## multi search in poleemploi, indeed & lesjeudis.com
