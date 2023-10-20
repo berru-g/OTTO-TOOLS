@@ -5,9 +5,15 @@ from pyfiglet import Figlet
 from colorama import Fore, Style
 
 def poleemploi_search_job():
-    f = Figlet(font='slant')
+    f = Figlet(font='larry3D')
     print(f.renderText('Scrap'))
-    print("*          Polamploa          *")
+    g = Figlet(font='slant')
+    print(g.renderText('*  emploi'))
+    
+    print(Fore.LIGHTBLUE_EX + "Pole emploi")
+    print(Fore.LIGHTGREEN_EX + "Les jeudis")
+    print(Fore.LIGHTYELLOW_EX + "Indeed")
+
     while True:
         print("╭─────────────────────────────╮")
         print("| Entrez le titre du poste:   |")
@@ -28,27 +34,27 @@ def poleemploi_search_job():
                     "subtitle": ".subtext",
                     "date": ".date",
                 },
-                "color": Fore.GREEN,
+                "color": Fore.LIGHTBLUE_EX,
             },
             {
                 "name": "Site Web 2",
                 "url": "https://lesjeudis.com/jobs?title={}&location={}",
                 "selectors": {
-                    "title": ".h4.JobCard_text__2DNt5",
+                    "title": ".h4 JobCard_text__2DNt5",
                     "subtitle": ".h6 JobCard_name__9_LXl",
                     "date": ".small-body-text",
                 },
-                "color": Fore.BLUE,
+                "color": Fore.LIGHTGREEN_EX,
             },
             {
                 "name": "Site Web 3",
                 "url": "https://fr.indeed.com/jobs?q={}&l={}",
                 "selectors": {
-                    "title": ".jobTitle css-mr1oe7 eu4oa1w0",
+                    "title": ".jobTitle css-1u6tfqq eu4oa1w0",
                     "subtitle": ".companyName",
                     "date": ".date",
                 },
-                "color": Fore.MAGENTA,
+                "color": Fore.LIGHTYELLOW_EX,
             },
         ]
 
@@ -70,14 +76,13 @@ def poleemploi_search_job():
             sleep(1)
 
         f = Figlet(font='slant')
-        print(f.renderText('PolAmploa'))
+        print(f.renderText('?'))
         print("Nouvelle recherche")
 
         user_input = input("Voulez-vous effectuer une nouvelle recherche ? (Oui/Non): ")
         if user_input.lower() != 'oui':
-            break  # Quitte la boucle si l'utilisateur ne veut pas effectuer une nouvelle recherche
+            exit()  # Quitte la boucle si l'utilisateur ne veut pas effectuer une nouvelle recherche
 
-    sleep(20)
 
 if __name__ == "__main__":
     poleemploi_search_job()

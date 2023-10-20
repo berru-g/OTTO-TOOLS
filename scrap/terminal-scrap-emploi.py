@@ -5,7 +5,7 @@ from pyfiglet import Figlet
 
 def poleemploi_search_job():
     f = Figlet(font='slant')
-    print(f.renderText('PolAmploa'))
+    print(f.renderText('PolAmploa scrap basic'))
     print("╭─────────────────────────────╮")
     print("| Entrez le titre du poste:   |")
     print("╰─────────────────────────────╯")

@@ -58,7 +58,7 @@ scriptFile.Close
 
 ' Ouvrir le dossier du nouveau projet dans VSCode
 Set shell = CreateObject("WScript.Shell")
-shell.Run "code " & folderPath
+shell.Run "code ." & folderPath
 ' Ouvrir le dossier du nouveau projet dans l'explorateur de fichiers
 Set shell = CreateObject("Shell.Application")
 shell.Open folderPath
