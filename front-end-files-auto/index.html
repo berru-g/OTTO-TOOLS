@@ -1,0 +1,44 @@
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Auto TOOL</title>
+    <link rel="shortcut icon"
+        href="🤖" />
+    <meta name=title content="Auto TOOL">
+    <meta name=description 
+        content="Automatiser la création de dossier frontend. Otto crée dans Document, un dossier contenant index.html, style.css, script.js et readme.md puis ouvre le projet dans vscode." />
+    <meta name=author content>
+    <meta name=keywords
+        content="automatiser frontend dossier, automation, frontend automatique, vscode tool, free vscode tool, open source" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Create front folder with a double click only.</h1>
+    <h3>Otto is <a href="https://github.com/berru-g/OTTO-TOOLS/blob/main/front-end-files-auto/Create-front-folders.vbs"
+            download="Create-front-folders.vbs">tool coding in vbscript</a>, allows you to <a href="#">create a
+            folder</a> in your 'documents', including an <a href="#">html, css, js</a> and readme file, then <a
+            href="#">open it in Vscode</a>, with <a href="#"> just a double click</a>.</h3><br>
+    <p><a class="git"
+            href="https://github.com/berru-g/OTTO-TOOLS/blob/main/front-end-files-auto/Create-front-folders.vbs"> Visit
+            in github </a></p><br>
+    <div class="plan">
+        <div class="mermaid">
+            graph LR
+            A[Documents] -- create --> B((new-project))
+            B[new-project] --> C{index.html}
+            B[new-project] --> D{style.CSS}
+            B[new-project] --> E{script.js}
+            C{index.html} --> F[vscode]
+            D{style.CSS} --> F[vscode]
+            E{script.js} --> F[vscode]
+        </div>
+    </div>
+    <p class="code">no install</p>
+    <p class="code">view code</p>
+    <p class="code">easy adapt</p>
+</body>
+<br><br>
+<p style="text-align:center;">dev by <a href="github.com/berru-g">berru-g</a>. </p>
+</html>
